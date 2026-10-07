@@ -1,0 +1,214 @@
+{
+  "trains": [
+    {
+      "number": "12780",
+      "name": "Gariberth",
+      "origin": "Hyderabad",
+      "destination": "Vizag",
+      "departure": "20:00",
+      "arrival": "07:50",
+      "fare": 200,
+      "id": "LEWm-XiNssM",
+      "capacity": 40,
+      "tatkalCapacity": 10
+    },
+    {
+      "number": "12346",
+      "name": "Visaka Express",
+      "origin": "Hyderabad",
+      "destination": "Vizag",
+      "departure": "06:00",
+      "arrival": "11:00",
+      "fare": 350,
+      "capacity": 20,
+      "tatkalCapacity": 0,
+      "runes": "Monday",
+      "id": "8bVia5-wPLY"
+    }
+  ],
+  "users": [
+    {
+      "id": "demo-user",
+      "firstName": "Demo",
+      "lastName": "User",
+      "username": "user",
+      "email": "user@example.com",
+      "mobile": "9876543210",
+      "password": "user123",
+      "role": "Passenger"
+    },
+    {
+      "id": "demo-admin",
+      "firstName": "Demo",
+      "lastName": "Admin",
+      "username": "admin",
+      "email": "admin@example.com",
+      "mobile": "9876543211",
+      "password": "admin123",
+      "role": "Administrator"
+    },
+    {
+      "firstName": "Assessment",
+      "lastName": "User",
+      "username": "assessment",
+      "email": "assessment@example.com",
+      "mobile": "9876543212",
+      "password": "demo123",
+      "role": "Passenger",
+      "id": "YmY03HBgw-o"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Test",
+      "username": "test",
+      "email": "test@gmail.com",
+      "mobile": "8989898989",
+      "password": "test123",
+      "role": "Passenger",
+      "id": "BOCtUOVp5o4"
+    }
+  ],
+  "passengers": [
+    {
+      "name": "Demo Passenger",
+      "age": 25,
+      "gender": "Female",
+      "berth": "Lower",
+      "userId": "demo-user",
+      "id": "UIpbo2WOqT8"
+    },
+    {
+      "name": "Dilip Gandham",
+      "age": 24,
+      "gender": "Male",
+      "berth": "Lower",
+      "userId": "demo-user",
+      "id": "gAuelCcdoJg"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "userId": "demo-user",
+      "type": "UPI",
+      "upi": "demo@upi",
+      "label": "UPI · demo@upi",
+      "id": "VD7dWiYdkO0"
+    },
+    {
+      "userId": "demo-user",
+      "type": "Debit card",
+      "holder": "Demo User",
+      "last4": "1111",
+      "expiry": "2028-12",
+      "label": "Debit card · ending 1111",
+      "id": "JOVK0PohPO4"
+    },
+    {
+      "userId": "demo-user",
+      "type": "Credit card",
+      "holder": "Demo User",
+      "last4": "4444",
+      "expiry": "2028-12",
+      "label": "Credit card · ending 4444",
+      "id": "_cJ5si9-UXA"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "Vn-8h_EpHNw",
+      "pnr": "35DA3DF883",
+      "userId": "demo-user",
+      "trainId": "LEWm-XiNssM",
+      "trainName": "Gariberth",
+      "trainNumber": "12780",
+      "origin": "Hyderabad",
+      "destination": "Vizag",
+      "departure": "20:00",
+      "arrival": "07:50",
+      "date": "2026-10-30",
+      "travelClass": "Sleeper",
+      "quota": "General",
+      "passengers": [
+        {
+          "name": "Dilip Gandham",
+          "age": 24,
+          "gender": "Male",
+          "berth": "Lower"
+        },
+        {
+          "name": "Dilip Gandham",
+          "age": 24,
+          "gender": "Male",
+          "berth": "Lower"
+        }
+      ],
+      "amount": 400,
+      "paymentMethod": "UPI · demo@upi",
+      "paymentStatus": "Refunded (simulated)",
+      "transactionId": "MOCK-4936826C",
+      "status": "Cancelled",
+      "createdAt": "2026-10-07T11:04:34.468Z",
+      "cancelledAt": "2026-10-07T11:41:24.440Z"
+    },
+    {
+      "id": "j2rkwLIiQyE",
+      "pnr": "A322C46FBC",
+      "userId": "demo-user",
+      "trainId": "LEWm-XiNssM",
+      "trainName": "Gariberth",
+      "trainNumber": "12780",
+      "origin": "Hyderabad",
+      "destination": "Vizag",
+      "departure": "20:00",
+      "arrival": "07:50",
+      "date": "2026-10-08",
+      "travelClass": "AC 3 Tier",
+      "quota": "Tatkal",
+      "passengers": [
+        {
+          "name": "Demo Passenger",
+          "age": 25,
+          "gender": "Female",
+          "berth": "Lower"
+        }
+      ],
+      "amount": 500,
+      "paymentMethod": "UPI · demo@upi",
+      "paymentStatus": "Refunded (simulated)",
+      "transactionId": "MOCK-0841965F",
+      "status": "Cancelled",
+      "createdAt": "2026-10-07T11:05:35.911Z",
+      "cancelledAt": "2026-10-07T11:05:58.437Z"
+    },
+    {
+      "id": "tZIL5tcsh_c",
+      "pnr": "2F0B0BD3D7",
+      "userId": "demo-user",
+      "trainId": "LEWm-XiNssM",
+      "trainName": "Gariberth",
+      "trainNumber": "12780",
+      "origin": "Hyderabad",
+      "destination": "Vizag",
+      "departure": "20:00",
+      "arrival": "07:50",
+      "date": "2026-10-07",
+      "travelClass": "Sleeper",
+      "quota": "General",
+      "passengers": [
+        {
+          "name": "Dilip Gandham",
+          "age": 24,
+          "gender": "Male",
+          "berth": "Lower"
+        }
+      ],
+      "amount": 200,
+      "paymentMethod": "Debit card · ending 1111",
+      "paymentStatus": "Paid (simulated)",
+      "transactionId": "MOCK-8175A05C",
+      "status": "Confirmed",
+      "createdAt": "2026-10-07T12:06:26.319Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
